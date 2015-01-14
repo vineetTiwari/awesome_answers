@@ -60,6 +60,8 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.4)
     execjs (2.2.2)
+    faker (1.4.3)
+      i18n (~> 0.5)
     ffi (1.9.6)
     globalid (0.3.0)
       activesupport (>= 4.1.0)
@@ -167,6 +169,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   colorize
+  faker
   hirb
   interactive_editor
   jbuilder (~> 2.0)
