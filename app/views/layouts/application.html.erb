@@ -13,6 +13,12 @@
 <a href="/hello">Hello</a>
 |
 <a href="/about">About</a>
+|
+<%= link_to "New Question", new_question_path %>
+|
+<%= link_to "All Question", questions_path %>
+<hr>
+<%= flash[:notice] || flash[:error] %>
 <hr>
 <%= yield %>
 

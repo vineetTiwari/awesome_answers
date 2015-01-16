@@ -1,4 +1,4 @@
-class Question < ActiveRecord::Base
+sclass Question < ActiveRecord::Base
 	validates :title, presence: true, uniqueness: {scope: :body, case_sensitive: false }
 	validates :body, presence: {message: "must be provided!"}, uniqueness: true
 	validates :view_count, numericality: {greater_than_or_equal_to: 0}
@@ -29,7 +29,7 @@ class Question < ActiveRecord::Base
 		self.view_count ||= 0
 	end
 
-	def capitalize_default
+	def capitalize_title
 		self.title.capitalize!
 	end
 end
