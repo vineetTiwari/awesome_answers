@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class="container">
 <a href="/">Home</a>
 |
 <a href="/hello">Hello</a>
@@ -21,6 +21,6 @@
 <%= flash[:notice] || flash[:error] %>
 <hr>
 <%= yield %>
-
+</div>
 </body>
 </html>
